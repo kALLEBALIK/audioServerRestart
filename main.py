@@ -46,7 +46,7 @@ def main():
     if running:
         logr.writeEntry('Checking Windows logs...')
     while running:
-        if runs % 1 == 0:
+        if runs % 10 == 0:
             logr.writeEntry('Still checking Windows logs...')
         if wnlg.didWakeup(sets.settings['event-time-diff']):
             restartAudio(logr, srvc)
